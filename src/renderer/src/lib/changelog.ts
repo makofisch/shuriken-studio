@@ -10,8 +10,15 @@ export const CHANGELOG: ChangelogEntry[] = [
   {
     version: '1.17.0',
     date: 'November 2026',
-    headline: 'Placeholder: the 1.17.0 headline',
-    changes: ['Placeholder: what changed in 1.17.0.'],
+    headline: 'Builds that wait for Kiln, and no flickering parts',
+    changes: [
+      'At a usage limit, work waits for the reset. A login that expires or is signed out pauses the team, and it carries on once you sign in again.',
+      'Kiln makes every model. If it can’t be reached, the build pauses until it’s back, or press “Run anyway (reduced quality)” and Shuriken’s own Blender builds the models meanwhile. A model Kiln can’t build after three tries is reported instead of made by hand.',
+      'No flickering parts: after each task that places parts, a check finds faces that Z-fight and fixes them before the review, and the final review checks the whole place.',
+      'Suggestion bubbles are written by a stronger model, follow the game as it changes, and rotate every 90 seconds.',
+      'The director can change how many Kiln builds run at once, straight from the chat.',
+      'No automatic updates: to get a newer version, download its installer and run it.',
+    ],
   },
   {
     version: '1.16.2',
